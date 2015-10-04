@@ -1,13 +1,9 @@
 ﻿using System;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Android.OS;
 using FAB = Android.Widget.Extras;
 using And = Android;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace Xamarin.Android.FloatingActionButton.Sample
