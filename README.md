@@ -2,9 +2,9 @@
 **Xamarin.Android.FloatingActionButton** is a lightweight higly compatible floating action button for **Xamarin.Android**.
 
 Features:
-	* Supports Android API 1 to Android API 22
-	* Lightweight, inherits directly from `View` class.
-	* Zero dependencies (not even Android support libraries)
+* Supports Android API 1 to Android API 22
+* Lightweight, inherits directly from `View` class.
+* Zero dependencies (not even Android support libraries)
 
 # Usage
 This repo contains a sample.
