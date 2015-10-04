@@ -109,7 +109,7 @@ namespace Android.Widget.Extras
 			TypedArray tArray = con.Theme.ObtainStyledAttributes(attrs, Resource.Styleable.FloatingActionButton, defStyleAttr, defStyleRes);
 			try
 			{
-				_radius = tArray.GetDimension(Resource.Styleable.FloatingActionButton_fab_radius, DipToPixels(DEFAULT_RADIUS));
+                _radius = tArray.GetDimension(Resource.Styleable.FloatingActionButton_fab_radius, DipToPixels(DEFAULT_RADIUS));
 				_backgroundColor = tArray.GetColor(Resource.Styleable.FloatingActionButton_fab_backgroundColor, Android.Resource.Color.BackgroundDark);
 				_drawableContent = tArray.GetDrawable(Resource.Styleable.FloatingActionButton_fab_content);
 				_shadowColor = tArray.GetColor(Resource.Styleable.FloatingActionButton_fab_shadowColor, Resource.Color.shadow_color);
