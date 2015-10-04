@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ListView
+        android:id="@+id/dummyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.widget.extras.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginBottom="@dimen/padding"
+        app:fab_radius="@dimen/radius"
+        app:fab_backgroundColor="@color/DodgerBlue"
+        app:fab_content="@drawable/ic_action_new"
+        app:fab_shadowColor="@android:color/white" />
+</RelativeLayout>
