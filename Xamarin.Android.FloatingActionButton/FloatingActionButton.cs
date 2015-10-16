@@ -78,7 +78,7 @@ namespace Android.Widget.Extras
 			{
 				SetLayerType(LayerType.Software, null);
 			}
-            _shadowPaint.SetShadowLayer(10, 0, 0, _shadowColor);
+			_shadowPaint.SetShadowLayer(10, 0, 0, _shadowColor);
 			canvas.DrawCircle(cx, cy, radius - 4, _shadowPaint);
 			canvas.DrawCircle(cx, cy, radius, _buttonBackgroundPaint);
 			
@@ -103,7 +103,7 @@ namespace Android.Widget.Extras
 			TypedArray tArray = con.Theme.ObtainStyledAttributes(attrs, Resource.Styleable.FloatingActionButton, defStyleAttr, defStyleRes);
 			try
 			{
-                _radius = tArray.GetDimension(Resource.Styleable.FloatingActionButton_fab_radius, DipToPixels(DEFAULT_RADIUS));
+				_radius = tArray.GetDimension(Resource.Styleable.FloatingActionButton_fab_radius, DipToPixels(DEFAULT_RADIUS));
 				_backgroundColor = tArray.GetColor(Resource.Styleable.FloatingActionButton_fab_backgroundColor, Android.Resource.Color.BackgroundDark);
 				_drawableContent = tArray.GetDrawable(Resource.Styleable.FloatingActionButton_fab_content);
 				_shadowColor = tArray.GetColor(Resource.Styleable.FloatingActionButton_fab_shadowColor, Resource.Color.shadow_color);
@@ -120,7 +120,7 @@ namespace Android.Widget.Extras
 			_buttonBackgroundPaint.SetMaskFilter(new BlurMaskFilter(2, BlurMaskFilter.Blur.Normal));
 			_shadowPaint = new Paint();
 			_shadowPaint.AntiAlias = true;
-        }
+		}
 
 		private int DipToPixels(int dip)
 		{
@@ -130,6 +130,6 @@ namespace Android.Widget.Extras
 		private float DipToPixels(float dip)
 		{
 			return dip * Resources.DisplayMetrics.Density + 0.5f;
-        }
+		}
 	}
 }
